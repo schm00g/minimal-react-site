@@ -1,4 +1,26 @@
-ReactDOM.render(
-    <ul><li>Hello</li><li>World</li></ul>, 
-    document.getElementById("root")
-);
+// JSX makes React more declarative
+// JSX outputs object that React can interpret
+
+const h1 = document.createElement("h1")
+h1.textContent = "Hello world"
+h1.className = "header"
+console.log(h1) // <h1 class="header">Hello world</h1>
+
+const element = <h1 className="header">This is JSX</h1>
+console.log(`element`, element);
+
+/* React elements
+{
+    "type": "h1",
+    "key": null,
+    "ref": null,
+    "props": {
+        "className": "header",
+        "children": "This is JSX"
+    },
+    "_owner": null,
+    "_store": {}
+}
+*/
+
+ReactDOM.render(element, document.getElementById("root"));
