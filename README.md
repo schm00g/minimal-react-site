@@ -1,2 +1,2 @@
-# React B React Site
+# Basic B React Site
 run `npx http-serve` from root
