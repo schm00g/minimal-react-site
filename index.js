@@ -1,26 +1,16 @@
-// JSX makes React more declarative
-// JSX outputs object that React can interpret
+const navbar = (
+    // this is JSX i.e. HTML in JS
+    <nav>
+        <h1>Places to visit</h1>
+        <ol>
+            <li><a href="https://www.google.com/search?q=WTF+is+JSX">Place A</a></li>
+            <li><a href="https://www.google.com/search?q=WTF+is+JSX">Place B</a></li>
+            <li><a href="https://www.google.com/search?q=WTF+is+JSX">Place C</a></li>
+        </ol>
+    </nav>
+)
 
-const h1 = document.createElement("h1")
-h1.textContent = "Hello world"
-h1.className = "header"
-console.log(h1) // <h1 class="header">Hello world</h1>
-
-const element = <h1 className="header">This is JSX</h1>
-console.log(`element`, element);
-
-/* React elements
-{
-    "type": "h1",
-    "key": null,
-    "ref": null,
-    "props": {
-        "className": "header",
-        "children": "This is JSX"
-    },
-    "_owner": null,
-    "_store": {}
-}
-*/
-
-ReactDOM.render(element, document.getElementById("root"));
+ReactDOM.render(
+    navbar,
+    document.getElementById("root")
+)
