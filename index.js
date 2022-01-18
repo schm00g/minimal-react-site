@@ -1,4 +1,5 @@
-// import React from "react";
+import React from "react";
+import ReactDOM from "react-dom";
 
 // JSX returns plain JS Objects
 const page = (
@@ -8,4 +9,6 @@ const page = (
         <p>Here</p>
     </div>
 )
-document.getElementById("root").append(JSON.stringify(page)); // [object Object]
+
+ReactDOM.render(page, document.getElementById("root"))
+// document.getElementById("root").append(JSON.stringify(page)); // [object Object]
