@@ -1,12 +1,17 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
+// webpack bundling
 import './index.css';
+import landscape from './images/landscape.jpg';
 import App from './App';
+import Footer from "./Footer";
 import reportWebVitals from './reportWebVitals';
 
 ReactDOM.render(
   <React.StrictMode>
     <App />
+    <img src={landscape} alt="mountain range"/>
+    <Footer />
   </React.StrictMode>,
   document.getElementById('root')
 );
