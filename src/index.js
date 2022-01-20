@@ -4,6 +4,8 @@ import ReactDOM from 'react-dom';
 import './index.css';
 import landscape from './images/landscape.jpg';
 import App from './App';
+import Navbar from './components/Navbar';
+import Main from './components/Main';
 import Footer from "./Footer";
 import reportWebVitals from './reportWebVitals';
 
@@ -11,6 +13,8 @@ ReactDOM.render(
   <React.StrictMode>
     <App />
     <img src={landscape} alt="mountain range"/>
+    <Navbar />
+    <Main />
     <Footer />
   </React.StrictMode>,
   document.getElementById('root')
